@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Drum Keys -->
+    <!-- Emmet - section.keys>div[data-key=""]*9>kbd+span.sound -->
+    <section class="keys">
+        <div class="key-item" data-key="65">
+            <div class="key-inner">
+                <p class="letter">A</p>
+                <p class="sound">Clap</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="83">
+            <div class="key-inner">
+                <p class="letter">S</p>
+                <p class="sound">Hihat</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="68">
+            <div class="key-inner">
+                <p class="letter">D</p>
+                <p class="sound">Kick</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="70">
+            <div class="key-inner">
+                <p class="letter">F</p>
+                <p class="sound">Openhat</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="71">
+            <div class="key-inner">
+                <p class="letter">G</p>
+                <p class="sound">Boom</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="72">
+            <div class="key-inner">
+                    <p class="letter">H</p>
+                    <p class="sound">Ride</p>
+                </div>
+            </div>
+        </div>
+        <div class="key-item" data-key="74">
+            <div class="key-inner">
+                <p class="letter">J</p>
+                <p class="sound">Snare</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="75">
+            <div class="key-inner">
+                <p class="letter">K</p>
+                <p class="sound">Tom</p>
+            </div>
+        </div>
+        <div class="key-item" data-key="76">
+            <div class="key-inner">
+                <p class="letter">L</p>
+                <p class="sound">Tink</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="branding" data-key="32">
+        <p>Drum Kit</p>
+    </section>
+
+    <!-- Audio Files -->
+    <!-- Emmet - audio[data-key="" src="sounds/"]*9 -->
+    <audio src="sounds/clap.wav" data-key="65"></audio>
+    <audio src="sounds/hihat.wav" data-key="83"></audio>
+    <audio src="sounds/kick.wav" data-key="68"></audio>
+    <audio src="sounds/openhat.wav" data-key="70"></audio>
+    <audio src="sounds/boom.wav" data-key="71"></audio>
+    <audio src="sounds/ride.wav" data-key="72"></audio>
+    <audio src="sounds/snare.wav" data-key="74"></audio>
+    <audio src="sounds/tom.wav" data-key="75"></audio>
+    <audio src="sounds/tink.wav" data-key="76"></audio>
+    <audio src="sounds/electro.wav" data-key="32"></audio>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
