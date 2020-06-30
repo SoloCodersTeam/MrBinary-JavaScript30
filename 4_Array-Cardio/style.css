@@ -1,0 +1,17 @@
+body   {
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+h1 {
+    font-family: arial;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background: #ededed;
+    box-shadow:  22px 22px 43px #c9c9c9, 
+                 -22px -22px 43px #ffffff;
+}
