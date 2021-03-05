@@ -72,11 +72,16 @@ function itemToggle (e) {
 }
 
 // To delete all items from the list
-function deleteItems () {
-    if (!items.reset)
-        location.reload()
-    localStorage.clear();
+function deleteItems() {
 
+    // reseting the array
+    items.reset
+
+    // deleting localStorage item
+    localStorage.removeItem('items');
+
+    // reloading the browser
+    location.reload()
 }
 
 // To check all items in the list
