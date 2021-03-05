@@ -1,0 +1,108 @@
+
+body {
+    font-family: cursive;
+    background-color: #e0e0e0;
+}
+
+.list-box {
+    width: 280px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 10px 10px 30px;
+    text-align: center;
+    background: #d2d9da;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+.list-box h1 {
+    text-align: center;
+    border-bottom: 3px solid gray;
+}
+
+ul.plates {
+    text-align: left;
+    list-style: none;
+    text-indent: 12px;
+    padding: 0;
+}
+
+.plates li {
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
+}
+
+.plates li input {
+    display: none;
+}
+.plates li input + label:before {
+    content: '🌕';
+    margin-right: 5px;
+}
+.plates li input:checked + label:before {
+    content: '🍕';
+}
+.plates li label {
+    word-break: break-all;
+    display: block;
+}
+
+
+.plates li label > .delete-single {
+    float: right;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.plates li label > .delete-single:focus {
+    outline: none;
+    background-color: rgb(219, 241, 247);    
+}
+
+input[type="text"] {
+    border: none;
+    padding: 10px 4px;
+    vertical-align: top;
+    border-bottom: 2px solid gray;
+    background: rgb(255 255 255 / 55%);
+    border-radius: 5px;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="submit"] {
+    border: none;
+    padding: 10px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:focus {
+    outline: none;
+    background-color: rgb(219, 241, 247);
+}
+
+.uncheck,
+.check,
+.dlt {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+.uncheck:focus,
+.check:focus,
+.dlt:focus {
+    outline: none;
+    background-color: rgb(219, 241, 247);    
+}
+
+
+
+
+
+
+
+
